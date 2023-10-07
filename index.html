@@ -7,6 +7,7 @@
   <title>CRV LAGOA</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-navButton.css">
   <script src="https://kit.fontawesome.com/9dd9d649b8.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,7 +18,9 @@
       <a class="navbar-brand" href=""><strong>CRV Brazil</strong></a>
       <!--BOTÃO DE EXPANDIR MENU (MOBILE)-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-expanded="false" aria-controls="collapseExample">
-        <span class="navbar-toggler-icon"></span>
+        <div id="navMenu">
+          <span></span><span></span><span></span>
+        </div>
       </button>
       <!--LINKS DE NAVEGAÇÃO-->
       <div class="navbar-collapse collapse">
@@ -309,6 +312,12 @@
       confirmButtonText:
         '<i class="fa fa-thumbs-up"></i> OK!',
       confirmButtonAriaLabel: 'Thumbs up, great!',
+    })
+
+    //button navMenu
+    const navMenu = document.querySelector("#navMenu")
+    navMenu.addEventListener("click", () => {
+      navMenu.classList.toggle("active")
     })
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
