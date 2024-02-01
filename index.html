@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style-navButton.css">
   <script src="https://kit.fontawesome.com/9dd9d649b8.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: aliceblue;
+    }
+  </style>
 </head>
 
 <body>
@@ -121,7 +126,7 @@
   <div class="container">
     <!--POLÍTICA COMERCIAL-->
     <h1>Política Comercial</h1>
-    <h6>Janeiro/2024</h6>
+    <h6>Fevereiro/2024</h6>
     <div class="accordion accordion-flush" id="accordion-politica-comercial">
       <div class="accordion-item">
         <h2 class="accordion-header">
@@ -177,14 +182,14 @@
     <div class="card mb-3 text-center">
       <div class="card-header">
         <!--TÍTULO DA CAMPANHA-->
-        <h5 class="card-title">Touro da Virada</h5>
+        <h5 class="card-title">Fertilidade Máxima</h5>
         <!--PASTA DE ATUAÇÃO DA CAMPANHA-->
-        <p class="card-text">CORTE & LEITE</p>
+        <p class="card-text">CORTE</p>
       </div>
       <div class="card-body">
         <!--DCO-->
         <div class="d-grid gap-2 mb-3">
-          <a href="./promocoes/virada/DCO.pdf" target="_blank" class="btn btn-primary">
+          <a href="./promocoes/fertilidade-maxima/dco.pdf" target="_blank" class="btn btn-primary">
             <i class="fa-solid fa-info"></i>
             DCO
           </a>
@@ -206,38 +211,20 @@
                 <!--MATERIAIS DA PROMOÇÃO-->
                 <div class="d-grid gap-2 ">
                   <h6>Corte Zebu</h6>
-                  <a href="./promocoes/virada/PREÇOS-CORTE-ZEBU.pdf" target="_blank" class="btn btn-primary">
+                  <a href="./promocoes/fertilidade-maxima/PRECO-CORTE-ZEBU.pdf" target="_blank" class="btn btn-primary">
                     <i class="fa-solid fa-file-invoice-dollar"></i>
                     Lista de Preços
                   </a>
-                  <a href="./promocoes/virada/CATALOGO-CORTE-ZEBU.pdf" target="_blank" class="btn btn-primary">
+                  <a href="./promocoes/fertilidade-maxima/CAT-CORTE-ZEBU.pdf" target="_blank" class="btn btn-primary">
                     <i class="fa-solid fa-book"></i>
                     Catálogo
                   </a>
                   <h6>Corte Europeu</h6>
-                  <a href="./promocoes/virada/PREÇOS-CORTE-EUROPEU.pdf" target="_blank" class="btn btn-primary">
+                  <a href="./promocoes/fertilidade-maxima/PRECO-CORTE-EUROPEU.pdf" target="_blank" class="btn btn-primary">
                     <i class="fa-solid fa-file-invoice-dollar"></i>
                     Lista de Preços
                   </a>
-                  <a href="./promocoes/virada/CATALOGO-CORTE-EUROPEU.pdf" target="_blank" class="btn btn-primary">
-                    <i class="fa-solid fa-book"></i>
-                    Catálogo
-                  </a>
-                  <h6>Leite Zebu</h6>
-                  <a href="./promocoes/virada/PREÇOS-LEITE-ZEBU.pdf" target="_blank" class="btn btn-primary">
-                    <i class="fa-solid fa-file-invoice-dollar"></i>
-                    Lista de Preços
-                  </a>
-                  <a href="./promocoes/virada/CATALOGO-LEITE-ZEBU.pdf" target="_blank" class="btn btn-primary">
-                    <i class="fa-solid fa-book"></i>
-                    Catálogo
-                  </a>
-                  <h6>Leite Europeu</h6>
-                  <a href="./promocoes/virada/PREÇOS-LEITE-EUROPEU.pdf" target="_blank" class="btn btn-primary">
-                    <i class="fa-solid fa-file-invoice-dollar"></i>
-                    Lista de Preços
-                  </a>
-                  <a href="./promocoes/virada/CATALOGO-LEITE-EUROPEU.pdf" target="_blank" class="btn btn-primary">
+                  <a href="./promocoes/fertilidade-maxima/CAT-CORTE-EUROPEU (2).pdf" target="_blank" class="btn btn-primary">
                     <i class="fa-solid fa-book"></i>
                     Catálogo
                   </a>
@@ -249,7 +236,78 @@
       </div>
       <!--VALIDADE DA CAMPANHA - RADAPÉ-->
       <div class="card-footer text-body-secondary">
-        Validade: 31 de Janeiro de 2024 (às 18:00h)
+        Validade: 29 de Fevereiro de 2024 (às 18:00h)
+      </div>
+    </div>
+    <!--FIM DO BLOCO DA PROMOÇÃO-->
+
+    <!--BLOCO DE PROMOÇÃO-->
+    <div class="card mb-3 text-center">
+      <div class="card-header">
+        <!--TÍTULO DA CAMPANHA-->
+        <h5 class="card-title">Antecipa Estação</h5>
+        <!--PASTA DE ATUAÇÃO DA CAMPANHA-->
+        <p class="card-text">LEITE</p>
+      </div>
+      <div class="card-body">
+        <!--DCO-->
+        <div class="d-grid gap-2 mb-3">
+          <a href="./promocoes/antecipa-estacao/dco.pdf" target="_blank" class="btn btn-primary">
+            <i class="fa-solid fa-info"></i>
+            DCO
+          </a>
+        </div>
+        <!--ACCORDION DOS MATERIAIS DA PROMOÇÃO-->
+        <!--LEMBRAR DE TROCAR O ID DO ACCORDION-->
+        <div class="accordion accordion-flush border" id="accordion-promocao-2">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <!--data-bs-target e arial-controls deve ser igual ao id do collapse-->
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-promocao-2" aria-expanded="false" aria-controls="collapse-promocao-2">
+                Material da Campanha
+              </button>
+            </h2>
+            <!--trocar o id do collapse para não dar conflito-->
+            <div id="collapse-promocao-2" class="accordion-collapse collapse" data-bs-parent="#accordion-promocao-2">
+              <div class="accordion-body">
+                <!--MATERIAIS DA PROMOÇÃO-->
+                <div class="d-grid gap-2 ">
+                  <h6>Leite Zebu</h6>
+                  <a href="./promocoes/antecipa-estacao/PRECO-CONVENCIONAL-LEITE-ZEBU.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    Preço Sêmen Convencional
+                  </a>
+                  <a href="./promocoes/antecipa-estacao/PRECO-SEXADO-LEITE-ZEBU.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    Preço Sêmen Sexado
+                  </a>
+                  <a href="./promocoes/antecipa-estacao/CAT-LEITE-ZEBU.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fa-solid fa-book"></i>
+                    Catálogo
+                  </a>
+                  <h6>Leite Europeu</h6>
+                  <a href="./promocoes/antecipa-estacao/PRECO-CONVENCIONAL-LEITE-EUROPEU.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    Preço Sêmen Convencional
+                  </a>
+                  <a href="./promocoes/antecipa-estacao/PRECO-SEXADO-LEITE-EUROPEU.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    Preço Sêmen Sexado
+                  </a>
+                  <a href="./promocoes/antecipa-estacao/CAT-LEITE-EUROPEU.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fa-solid fa-book"></i>
+                    Catálogo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--VALIDADE DA CAMPANHA - RADAPÉ-->
+      <div class="card-footer text-body-secondary">
+        Validade: 29 de Fevereiro de 2024 (às 18:00h)
       </div>
     </div>
     <!--FIM DO BLOCO DA PROMOÇÃO-->
