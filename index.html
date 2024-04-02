@@ -10,11 +10,14 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style-navButton.css">
   <script src="https://kit.fontawesome.com/9dd9d649b8.js" crossorigin="anonymous"></script>
+
   <style>
-    body {
-      background-color: #eee;
+    .imgCard{
+      height: 230px;
+      object-fit: cover;
     }
   </style>
+
 </head>
 
 <body>
@@ -134,7 +137,7 @@
   <div class="container">
     <!--POLÍTICA COMERCIAL-->
     <h1>Política Comercial</h1>
-    <h6>Fevereiro/2024</h6>
+    <h6>Abril/2024</h6>
     <div class="accordion accordion-flush" id="accordion-politica-comercial">
       <div class="accordion-item">
         <h2 class="accordion-header">
@@ -169,12 +172,12 @@
           data-bs-parent="#accordion-politica-comercial">
           <div class="accordion-body">
             <div class="d-grid gap-2 ">
-              <a href="./politicas-comerciais/EMB-CORTE-ZEBU.pdf" target="_blank" class="btn btn-primary">Corte Zebu</a>
-              <a href="./politicas-comerciais/EMB-CORTE-EUROPEU.pdf" target="_blank" class="btn btn-primary">Corte
+              <a href="./politicas-comerciais/EMB-CORTE-ZEBU.pdf" target="_blank" class="btn btn-danger">Corte Zebu</a>
+              <a href="./politicas-comerciais/EMB-CORTE-EUROPEU.pdf" target="_blank" class="btn btn-danger">Corte
                 Europeu</a>
               <hr>
-              <a href="./politicas-comerciais/EMB-LEITE-ZEBU.pdf" target="_blank" class="btn btn-primary">Leite Zebu</a>
-              <a href="./politicas-comerciais/EMB-LEITE-EUROPEU.pdf" target="_blank" class="btn btn-primary">Leite
+              <a href="./politicas-comerciais/EMB-LEITE-ZEBU.pdf" target="_blank" class="btn btn-danger">Leite Zebu</a>
+              <a href="./politicas-comerciais/EMB-LEITE-EUROPEU.pdf" target="_blank" class="btn btn-danger">Leite
                 Europeu</a>
             </div>
           </div>
@@ -186,126 +189,110 @@
     <!--
       <h4 class="text-danger">Nenhuma promoção vigente no momento!</h4>
     -->
-    <!--BLOCO DE PROMOÇÃO-->
-    <div class="card mb-3 text-center">
-      <div class="card-header">
-        <!--TÍTULO DA CAMPANHA-->
-        <h5 class="card-title">Força do Leite</h5>
-        <!--PASTA DE ATUAÇÃO DA CAMPANHA-->
-        <p class="card-text">LEITE EUROPEU</p>
-      </div>
-      <div class="card-body">
-        <!--DCO-->
-        <div class="d-grid gap-2 mb-3">
-          <a href="./promocoes/FORCA-DO-LEITE/DCO-FORCA-DO-LEITE.pdf" target="_blank" class="btn btn-primary">
-            <i class="fa-solid fa-info"></i>
-            DCO
-          </a>
+    
+
+    <div class="row">
+      <div class="col-sm-4 mb-3 mb-sm-0">
+
+        <div class="card mb-3">
+          <img src="./assets/img-cards/corte zebu e europeu.webp" class="card-img-top img-fluid imgCard" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Estação Antecipada</h5>
+            <p class="card-text">Corte Zebu e Europeu <br><strong>Validade:</strong> 31 de Maio de 2024 (até 18:00h)</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#estacaoAntecipada">
+              Material da Campanha
+            </button>
+          </div>
         </div>
-        <!--ACCORDION DOS MATERIAIS DA PROMOÇÃO-->
-        <!--LEMBRAR DE TROCAR O ID DO ACCORDION-->
-        <div class="accordion accordion-flush border" id="accordion-promocao-1">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <!--data-bs-target e arial-controls deve ser igual ao id do collapse-->
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse-promocao-1" aria-expanded="false" aria-controls="collapse-promocao-1">
-                Material da Campanha
-              </button>
-            </h2>
-            <!--trocar o id do collapse para não dar conflito-->
-            <div id="collapse-promocao-1" class="accordion-collapse collapse" data-bs-parent="#accordion-promocao-1">
-              <div class="accordion-body">
-                <!--MATERIAIS DA PROMOÇÃO-->
+
+        <!-- Modal -->
+        <div class="modal fade" id="estacaoAntecipada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Estação Antecipada</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
                 <div class="d-grid gap-2 ">
-                  <h6>Leite Europeu</h6>
-                  <a href="./promocoes/FORCA-DO-LEITE/PRECO-CONVENCIONAL.pdf" target="_blank" class="btn btn-primary">
-                    <i class="fa-solid fa-file-invoice-dollar"></i>
-                    Preços - Convencional
+                  <h6>Documentação</h6>
+                  <a href="./promocoes/ESTAÇÃO-ANTECIPADA/PREÇO-CORTE-EUROPEU.pdf" target="_blank" class="btn btn-danger">
+                    <i class="fa-solid fa-info"></i>
+                    DCO
                   </a>
-                  <a href="./promocoes/FORCA-DO-LEITE/PRECO-SEXADO.pdf" target="_blank" class="btn btn-primary">
+                  <h6>Corte Europeu</h6>
+                  <a href="./promocoes/ESTAÇÃO-ANTECIPADA/PREÇO-CORTE-EUROPEU.pdf" target="_blank" class="btn btn-primary">
                     <i class="fa-solid fa-file-invoice-dollar"></i>
-                    Preços - Sexado
+                    Preços Corte Europeu
                   </a>
-                  <a href="./promocoes/FORCA-DO-LEITE/CATALOGO-TOUROS_compressed.pdf" target="_blank" class="btn btn-primary">
+                  <a href="./promocoes/ESTAÇÃO-ANTECIPADA/CATÁLOGO-CORTE-EUROPEU.pdf" target="_blank"
+                    class="btn btn-primary">
                     <i class="fa-solid fa-book"></i>
-                    Catálogo
+                    Catálogo Corte Europeu
+                  </a>
+                  <h6>Corte Zebu</h6>
+                  <a href="./promocoes/ESTAÇÃO-ANTECIPADA/PREÇO-CORTE-ZEBU.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    Preços Corte Zebu
+                  </a>
+                  <a href="./promocoes/ESTAÇÃO-ANTECIPADA/CATÁLOGO-CORTE-ZEBU.pdf" target="_blank"
+                    class="btn btn-primary">
+                    <i class="fa-solid fa-book"></i>
+                    Catálogo Corte Zebu
                   </a>
                 </div>
               </div>
+             
             </div>
           </div>
         </div>
       </div>
-      <!--VALIDADE DA CAMPANHA - RADAPÉ-->
-      <div class="card-footer text-body-secondary">
-      Validade: 31 de Março de 2024 (às 18:00h)
-      </div>
-    </div>
-    <!--FIM DO BLOCO DA PROMOÇÃO-->
 
-    <!--BLOCO DE PROMOÇÃO-->
-    <div class="card mb-3 text-center">
-      <div class="card-header">
-        <!--TÍTULO DA CAMPANHA-->
-        <h5 class="card-title">Porteira Aberta</h5>
-        <!--PASTA DE ATUAÇÃO DA CAMPANHA-->
-        <p class="card-text">CORTE ZEBU E EUROPEU <br> LEITE ZEBU</p>
-      </div>
-      <div class="card-body">
-        <!--DCO-->
-        <div class="d-grid gap-2 mb-3">
-          <a href="./promocoes/PORTEIRA-ABERTA/DCO-PORTEIRA-ABERTA.pdf" target="_blank" class="btn btn-primary">
-            <i class="fa-solid fa-info"></i>
-            DCO
-          </a>
+      <div class="col-sm-4">
+        <div class="card mb-3">
+          <img src="./assets/img-cards/corte zebu e europeu.webp" class="card-img-top imgCard" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Porteira Aberta</h5>
+            <p class="card-text">Corte Zebu e Europeu <br><strong>Validade:</strong> 14 de Abril de 2024 (até 18:00h)</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#porteiraAberta">
+              Material da Campanha
+            </button>
+          </div>
         </div>
-        <!--ACCORDION DOS MATERIAIS DA PROMOÇÃO-->
-        <!--LEMBRAR DE TROCAR O ID DO ACCORDION-->
-        <div class="accordion accordion-flush border" id="accordion-promocao-2">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <!--data-bs-target e arial-controls deve ser igual ao id do collapse-->
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse-promocao-2" aria-expanded="false" aria-controls="collapse-promocao-2">
-                Material da Campanha
-              </button>
-            </h2>
-            <!--trocar o id do collapse para não dar conflito-->
-            <div id="collapse-promocao-2" class="accordion-collapse collapse" data-bs-parent="#accordion-promocao-2">
-              <div class="accordion-body">
-                <!--MATERIAIS DA PROMOÇÃO-->
+        <!-- Modal -->
+        <div class="modal fade" id="porteiraAberta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Porteira Aberta</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
                 <div class="d-grid gap-2 ">
-                  <h6>Leite Zebu</h6>
-                  <a href="./promocoes/PORTEIRA-ABERTA/PRECO-LEITE-ZEBU-CONVENCIONAL.pdf" target="_blank" class="btn btn-primary">
-                    <i class="fa-solid fa-file-invoice-dollar"></i>
-                    Preços - Convencional
-                  </a>
-                  <a href="./promocoes/PORTEIRA-ABERTA/PRECO-LEITE-ZEBU-SEXADO.pdf" target="_blank" class="btn btn-primary">
-                    <i class="fa-solid fa-file-invoice-dollar"></i>
-                    Preços - Sexado
-                  </a>
-                  <a href="./promocoes/PORTEIRA-ABERTA/CAT-LEITE-ZEBU_compressed.pdf" target="_blank" class="btn btn-primary">
-                    <i class="fa-solid fa-book"></i>
-                    Catálogo
+                  <h6>Documentação</h6>
+                  <a href="./promocoes/PORTEIRA-ABERTA/DCO-PORTEIRA-ABERTA.pdf" target="_blank" class="btn btn-danger">
+                    <i class="fa-solid fa-info"></i>
+                    DCO
                   </a>
                   <h6>Corte Europeu</h6>
                   <a href="./promocoes/PORTEIRA-ABERTA/PRECO-CORTE-EUROPEU.pdf" target="_blank" class="btn btn-primary">
                     <i class="fa-solid fa-file-invoice-dollar"></i>
-                    Preços - Convencional
+                    Preços Corte Europeu
                   </a>
-                  <a href="./promocoes/PORTEIRA-ABERTA/CAT-CORTE-EUROPEU_compressed.pdf" target="_blank" class="btn btn-primary">
+                  <a href="./promocoes/PORTEIRA-ABERTA/CATÁLOGO-CORTE-EUROPEU.pdf" target="_blank"
+                    class="btn btn-primary">
                     <i class="fa-solid fa-book"></i>
-                    Catálogo
+                    Catálogo Corte Europeu
                   </a>
                   <h6>Corte Zebu</h6>
                   <a href="./promocoes/PORTEIRA-ABERTA/PRECO-CORTE-ZEBU.pdf" target="_blank" class="btn btn-primary">
                     <i class="fa-solid fa-file-invoice-dollar"></i>
-                    Preços - Convencional
+                    Preços Corte Zebu
                   </a>
-                  <a href="./promocoes/PORTEIRA-ABERTA/CAT-CORTE-ZEBU_compressed.pdf" target="_blank" class="btn btn-primary">
+                  <a href="./promocoes/PORTEIRA-ABERTA/CATÁLOGO-CORTE-ZEBU.pdf" target="_blank"
+                    class="btn btn-primary">
                     <i class="fa-solid fa-book"></i>
-                    Catálogo
+                    Catálogo Corte Zebu
                   </a>
                 </div>
               </div>
@@ -313,17 +300,143 @@
           </div>
         </div>
       </div>
-      <!--VALIDADE DA CAMPANHA - RADAPÉ-->
-      <div class="card-footer text-body-secondary">
-        Validade: 31 de Março de 2024 (às 18:00h)
+
+      <div class="col-sm-4">
+        <div class="card mb-3">
+          <img src="./assets/img-cards/leite-zebu.jpg" class="card-img-top img-fluid imgCard" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Esquenta Expozebu</h5>
+            <p class="card-text">Corte Zebu e Europeu <br><strong>Validade:</strong> 10 de Maio de 2024 (até 18:00h)</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#esquentaExpozebu">
+              Material da Campanha
+            </button>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="esquentaExpozebu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Esquenta Expozebu</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="d-grid gap-2 ">
+                  <h6>Documentação</h6>
+                  <a href="./promocoes/ESQUENTA-EXPOZEBU/DCO-ESQUENTA-EXPOZEBU.pdf" target="_blank" class="btn btn-danger">
+                    <i class="fa-solid fa-info"></i>
+                    DCO
+                  </a>
+                  <h6>Leite Europeu</h6>
+                  <a href="./promocoes/ESQUENTA-EXPOZEBU/PREÇO-CONVENCIONAL.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    Preços - Convencional
+                  </a>
+                  <a href="./promocoes/ESQUENTA-EXPOZEBU/PREÇO-SEXADO.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    Preços - Sexado
+                  </a>
+                  <a href="./promocoes/ESQUENTA-EXPOZEBU/CATÁLOGO.pdf" target="_blank"
+                    class="btn btn-primary">
+                    <i class="fa-solid fa-book"></i>
+                    Catálogo
+                  </a>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="col-sm-4">
+        <div class="card mb-3">
+          <img src="./assets/img-cards/leite-europeu.jpg" class="card-img-top imgCard" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Progresso Máximo</h5>
+            <p class="card-text">Corte Zebu e Europeu <br><strong>Validade:</strong> 30 de Abril de 2024 (até 18:00h)</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#progressoMaximo">
+              Material da Campanha
+            </button>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="progressoMaximo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Progresso Máximo</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="d-grid gap-2 ">
+                  <h6>Documentação</h6>
+                  <a href="./promocoes/PROGRESSO-MAXIMO/DCO-PROGRESSO-MAXIMO.pdf" target="_blank" class="btn btn-danger">
+                    <i class="fa-solid fa-info"></i>
+                    DCO
+                  </a>
+                  <h6>Leite Europeu</h6>
+                  <a href="./promocoes/PROGRESSO-MAXIMO/PREÇO-CONVENCIONAL.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    Preços - Convencional
+                  </a>
+                  <a href="./promocoes/PROGRESSO-MAXIMO/PREÇO-SEXADO.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    Preços - Sexado
+                  </a>
+                  <a href="./promocoes/PROGRESSO-MAXIMO/CATÁLOGO.pdf" target="_blank"
+                    class="btn btn-primary">
+                    <i class="fa-solid fa-book"></i>
+                    Catálogo
+                  </a>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card mb-3">
+          <img src="./assets/img-cards/embriões.jpeg" class="card-img-top imgCard" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Expozebu Embryo</h5>
+            <p class="card-text">Corte Zebu e Europeu <br><strong>Validade:</strong> 10 de Maio de 2024 (até 18:00h)</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#embryo">
+              Material da Campanha
+            </button>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="embryo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Expozebu Embryo</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="d-grid gap-2 ">
+                  <h6>Documentação</h6>
+                  <a href="./promocoes/EXPOZEBU-EMBRYO/DCO-EXPOZEBU-EMBRYO.pdf" target="_blank" class="btn btn-danger">
+                    <i class="fa-solid fa-info"></i>
+                    DCO
+                  </a>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <!--FIM DO BLOCO DA PROMOÇÃO-->
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
-    Swal.fire({
+   /* Swal.fire({
       title: '<strong>ATENÇÃO</strong>',
       icon: 'info',
       html:
@@ -339,7 +452,7 @@
     const navMenu = document.querySelector("#navMenu")
     navMenu.addEventListener("click", () => {
       navMenu.classList.toggle("active")
-    })
+    })*/
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
