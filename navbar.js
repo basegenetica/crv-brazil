@@ -1,6 +1,6 @@
 async function loadNavbar(){
     try{
-      const response = await fetch('./navbar.html')
+      const response = await fetch('/crv-brazil/navbar.html')
       if (response.ok) {
         const template = await response.text()
         document.getElementById('navbar-container').innerHTML = template
