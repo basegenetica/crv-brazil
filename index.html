@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="style-navButton.css">
   <script src="https://kit.fontawesome.com/9dd9d649b8.js" crossorigin="anonymous"></script>
 
+
   <style>
     .imgCard {
       height: 230px;
@@ -21,126 +22,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg border-bottom shadow-sm mb-3">
-    <div class="container">
-      <!--LOGO-->
-      <a class="navbar-brand" href=""><strong>CRV Lagoa</strong></a>
-      <!--BOTÃO DE EXPANDIR MENU (MOBILE)-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-        aria-expanded="false" aria-controls="collapseExample">
-        <div id="navMenu">
-          <span></span><span></span><span></span>
-        </div>
-      </button>
-      <!--LINKS DE NAVEGAÇÃO-->
-      <div class="navbar-collapse collapse">
-        <ul class="navbar-nav flex-grow-1">
-          <li class="nav-item">
-
-            <a class="nav-link" target="_blank"
-              href="https://drive.google.com/drive/folders/1GS4X6uBFDWpUAGAZ1diNRfR8M-mhgRaT">
-              <i class="fa-brands fa-google-drive"></i>
-              Google Drive
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://touros.crvbrasil.com.br/">
-              <i class="fa-solid fa-images"></i>
-              Web Catálogo
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./condicao-comercial/condicao-comercial.html">
-              <i class="fa-solid fa-sack-dollar"></i>
-              Parcelamento
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-list"></i>
-              Serviços
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" target="_blank" href="promocoes/herdoptimizer/REGULAMENTO HERDOPTIMIZER.pdf">
-                  <i class="fa-solid fa-cow"></i>
-                  Herdoptimizer
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" target="_blank" href="http://rastreabilidade.crvbrasil.com.br/">
-                  <i class="fa-solid fa-file-medical"></i>
-                  Consultar Partida
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" target="_blank" href="./servicos/Lista_Contatos_Internos_CRV_28-02-24 1.pdf">
-                  <i class="fa-solid fa-address-book"></i>
-                  Contatos CRV
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" target="_blank"
-                  href="https://forms.office.com/pages/responsepage.aspx?id=lzsiLJC9zkSMJGoITfT0rVvd4Pw3M8dMixiymdDe0wxUME5STFNFSUNOOVRMSFEzU1pZNVU0UlUwUi4u">
-                  <i class="fa-solid fa-file-signature"></i>
-                  Registro RA
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              Consulta Pública
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" target="_blank" href="https://www.ancp.org.br/consulta-de-touros/">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                  ANCP
-                </a>
-              </li>
-              <li><a class="dropdown-item" target="_blank"
-                  href="https://www.abcz.org.br/pmgz/consultar-avaliacoes-geneticas/deca">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                  PMGZ
-                </a>
-              </li>
-              <li><a class="dropdown-item" target="_blank" href="https://gppluson.geneplus.com.br/">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                  GENEPLUS
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-brands fa-readme"></i>
-              Catálogos
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" target="_blank" href="./catalogos-de-touros/corte-zebu.pdf">
-                  <i class="fa-solid fa-book"></i>
-                  Corte Zebu
-                </a></li>
-              <li><a class="dropdown-item" target="_blank" href="./catalogos-de-touros/corte-europeu.pdf">
-                  <i class="fa-solid fa-book"></i>
-                  Corte Europeu
-                </a></li>
-              <hr>
-              <li><a class="dropdown-item" target="_blank" href="./catalogos-de-touros/leite-zebu.pdf">
-                  <i class="fa-solid fa-book"></i>
-                  Leite Zebu
-                </a></li>
-              <li><a class="dropdown-item" target="_blank" href="./catalogos-de-touros/leite-europeu.pdf">
-                  <i class="fa-solid fa-book"></i>
-                  Leite Europeu
-                </a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div id="navbar-container"></div> 
   <div class="container">
     <!--POLÍTICA COMERCIAL-->
     <h1>Política Comercial</h1>
@@ -325,6 +207,7 @@
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="navbar.js"></script>
   <script>
     Swal.fire({
       title: '<strong>ATENÇÃO</strong>',
