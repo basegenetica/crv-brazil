@@ -13,11 +13,19 @@
 
 <body>
     <div class="container mt-5">
-        <h2>Formulário de Parcelamento</h2>
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-start align-items-center">
+                <h1 class="mr-auto">Teste de Condição</h1>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end align-items-center">
+                <a href="./condicao-comercial.html" class="btn btn-primary">Voltar</a>
+            </div>
+        </div>
+        <hr>
         <form id="parcelamentoForm" class="needs-validation" novalidate>
             <div class="form-group">
                 <label for="valorPedido">Valor do Pedido:</label>
-                <input type="number" class="form-control" id="valorPedido" name="valorPedido" required>
+                <input type="text" class="form-control" id="valorPedido" name="valorPedido" required>
                 <div class="invalid-feedback">
                     Por favor, insira o valor do pedido.
                 </div>
@@ -26,25 +34,36 @@
                 <label for="categoriaProduto">Categoria do Produto:</label>
                 <select class="form-control" id="categoriaProduto" name="categoriaProduto" required>
                     <option value="">Selecione uma categoria</option>
-                    <option value="leite">Leite</option>
-                    <option value="corte">Corte</option>
+                    <option value="politica1">Sêmen Corte</option>
+                    <option value="politica2">Sêmen Leite</option>
+                    <option value="politica3">Embrião</option>
+                    <option value="politica4">Material de IA | Botijão</option>
                 </select>
                 <div class="invalid-feedback">
                     Por favor, selecione uma categoria.
                 </div>
             </div>
-            <button type="button" class="btn btn-primary" onclick="calcularParcelamento()">Calcular
+            <button type="button" class="btn btn-primary mt-3" onclick="calcularParcelamento()">Calcular
                 Parcelamento</button>
         </form>
-        <div class="mt-3">
+        <hr>
+        <div class="m-3">
             <h3>Resultado:</h3>
             <ul id="resultado" class="list-group"></ul>
         </div>
     </div>
+    <script src="teste-condicao.js"></script>
     <script src="../navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#valorPedido').mask('000.000.000.000.000,00', { reverse: true });
+        });
+    </script>
 </body>
 
 </html>
