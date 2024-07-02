@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
         if (diffDays < 0) {
             campanha.classList.add('expired');
             icon.classList.add('fas', 'fa-times-circle');
-            //button.classList.add('disabled');
             button.setAttribute('disabled', 'true');
         } else if (diffDays <= 5) {
             campanha.classList.add('warning');

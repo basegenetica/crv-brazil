@@ -1,5 +1,5 @@
 .campanha {
-    margin-top: 3px;
+    margin-top: 1px;
     padding: 2px 4px;
     border-radius: 3px;
     color: black;
@@ -22,4 +22,39 @@
 
 .icon {
     margin-right: 10px;
+}
+
+@media (max-width: 258px) {
+    .campanha {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 259px) and (max-width: 294px) {
+    .campanha {
+        font-size: 12px;
+    }
+}
+@media (min-width: 295px) and (max-width: 415px) {
+    .campanha {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 416) and (max-width: 575px) {
+    .campanha {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1199px) {
+    .campanha {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .campanha {
+        font-size: 1em;
+    }
 }

@@ -90,9 +90,9 @@
               <h5 class="card-title">CRV Embryo: 1 século em 1 geração</h5>
               <p class="card-text"><strong>Pasta:</strong> Leite Europeu<br>
                 <!--Validade da Campanha-->
-                <span class="campanha" data-validade="2024-07-31">
-                  <i class="icon"></i><strong>Validade:</strong> 31 de Julho de 2024 (até 18:00h)
-                </span>
+                <div class="campanha" data-validade="2024-07-31">
+                  <i class="icon"></i><strong>Validade:</strong><br> 31 de Julho de 2024 (até 18:00h)
+                </div>
                 <!--Fim da Valodade da Campanha-->
               </p>
               <button type="button" class="btn btn-success btn-campanha" data-bs-toggle="modal" data-bs-target="#embryo">
@@ -158,6 +158,57 @@
         </div>
         <!--Fim do Bloco da Promoção-->
 
+         <!--Bloco de promoção-->
+         <div class="col-sm-4">
+          <!--Card da Promoção-->
+          <div class="card mb-3">
+            <img src="./assets/img-cards/herdoptimizer.png" class="card-img-top img-fluid imgCard" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Herdoptimizer</h5>
+              <p class="card-text"><strong>Pasta:</strong> Serviços<br>
+                <!--Validade da Campanha-->
+                <div class="campanha" data-validade="2024-07-31">
+                  <i class="icon"></i><strong>Validade:</strong><br> 31 de Julho de 2024 (até 18:00h)
+                </div>
+                <!--Fim da Valodade da Campanha-->
+              </p>
+              <button type="button" class="btn btn-success btn-campanha" data-bs-toggle="modal" data-bs-target="#herd">
+                Material da Campanha
+              </button>
+            </div>
+          </div>
+          <!--Fim do Card da Promoção-->
+
+          <!-- Modal -->
+          <div class="modal fade" id="herd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Herdoptimizer</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="d-grid gap-2 ">
+                    <h6>Documentação</h6>
+                    <a href="./promocoes/VOCE-NO-COMANDO-DO-FUTURO/DCO.pdf" target="_blank" class="btn btn-warning">
+                      <i class="fa-solid fa-info"></i>
+                      DCO
+                    </a>
+                    <h6>Materiais</h6>
+                    <a href="./promocoes/VOCE-NO-COMANDO-DO-FUTURO/PREÇO.pdf" target="_blank" class="btn btn-primary">
+                      <i class="fa-solid fa-book"></i>
+                      Material de Divulgação
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--Fim da Modal-->
+        </div>
+        <!--Fim do Bloco da Promoção-->
+
         <!--Bloco de promoção-->
         <div class="col-sm-4">
           <!--Card da Promoção-->
@@ -167,9 +218,9 @@
               <h5 class="card-title">Leilão EAO | Mega Evento EAO</h5>
               <p class="card-text"><strong>Pasta:</strong> Corte Zebu<br>
                 <!--Validade da Campanha-->
-                <span class="campanha" data-validade="2024-07-14">
-                  <i class="icon"></i><strong>Validade:</strong> 11 à 14 de Julho de 2024 (até 18:00h)
-                </span>
+                <div class="campanha" data-validade="2024-07-14">
+                  <i class="icon"></i><strong>Validade:</strong><br> 11 à 14 de Julho de 2024 (até 18:00h)
+                </div>
                 <!--Fim da Valodade da Campanha-->
               </p>
               <button type="button" class="btn btn-success btn-campanha" data-bs-toggle="modal" data-bs-target="#eao">
@@ -208,6 +259,7 @@
           <!--Fim da Modal-->
         </div>
         <!--Fim do Bloco da Promoção-->
+        
         <!--Bloco de promoção-->
         <div class="col-sm-4">
           <!--Card da Promoção-->
@@ -217,9 +269,9 @@
               <h5 class="card-title">Campanha Sprint Final</h5>
               <p class="card-text"><strong>Pasta:</strong> Leite e Corte<br>
                 <!--Validade da Campanha-->
-                <span class="campanha" data-validade="2024-08-31"> 
-                  <i class="icon"></i><strong>Validade:</strong> 31 de Agosto de 2024 (até 18:00h)
-                </span>
+                <div class="campanha" data-validade="2024-08-31"> 
+                  <i class="icon"></i><strong>Validade:</strong><br> 31 de Agosto de 2024 (até 18:00h)
+                </div>
                 <!--Fim da Valodade da Campanha-->
               </p>
               <button type="button" class="btn btn-success btn-campanha" data-bs-toggle="modal" data-bs-target="#sprintfinal">
@@ -326,11 +378,6 @@
         confirmButtonAriaLabel: 'Thumbs up, great!',
       })
 
-      //button navMenu
-      const navMenu = document.querySelector("#navMenu")
-      navMenu.addEventListener("click", () => {
-        navMenu.classList.toggle("active")
-      })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
