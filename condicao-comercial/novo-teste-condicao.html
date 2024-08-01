@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com Formulário</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .highlight {
+            background-color: #ffdd57;
+        }
+        .rotate {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            text-align: center;
+        }
+        .title-table {
+            background-color: gray; 
+            color:white;
+        }
+        .colums-title-table {
+            background-color: silver; 
+            color:white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Tabela com Formulário</h2>
+        
+        <form id="formulario">
+            <div class="form-group">
+                <label for="valor">Valor:</label>
+                <input type="number" class="form-control" id="valor" placeholder="R$" step="0.01">
+            </div>
+            <div class="form-group">
+                <label>Tipo:</label><br>
+                <input type="radio" id="corte" name="tipo" value="corte">
+                <label for="corte">Corte</label><br>
+                <input type="radio" id="leite" name="tipo" value="leite">
+                <label for="leite">Leite</label>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="calcular()">Calcular</button>
+        </form>
+
+        <table class="table table-bordered text-center mt-3">
+            <thead>
+                <tr>
+                    <th colspan="6" class="title-table">Condições Liberadas no Smartorder</th>
+                </tr>
+                <tr class="title-table">
+                    <th colspan="2">Prazos</th>
+                    <th>Cód. Condição</th>
+                    <th>Descrição</th>
+                    <th>Descrição Detalhada</th>
+                    <th>Prazo Médio (em dias)</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-corpo">
+                <tr>
+                    <td class="rotate colums-title-table" rowspan="22">Parcelamentos Iniciados</td>
+                    <td class="rotate colums-title-table" rowspan="7">Direto</td>
+                    <td>000</td>
+                    <td>A VISTA</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>082</td>
+                    <td>20 DIAS DIRETO</td>
+                    <td>20</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>30 DIAS DIRETO</td>
+                    <td>30</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>007</td>
+                    <td>45 DIAS DIRETO</td>
+                    <td>45</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>011</td>
+                    <td>60 DIAS DIRETO</td>
+                    <td>60</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>095</td>
+                    <td>90 DIAS DIRETO</td>
+                    <td>90</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>086</td>
+                    <td>120 DIAS DIRETO</td>
+                    <td>120</td>
+                    <td>120</td>
+                </tr>
+                
+                <tr>
+                    <td class="rotate colums-title-table" rowspan="7">30 dias</td>
+                    <td>002</td>
+                    <td>02 PARC. 30D (1ª P/30)</td>
+                    <td>30,60</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>03 PARC. 30D (1ª P/30)</td>
+                    <td>30,60,90</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>021</td>
+                    <td>04 PARC. 30D (1ª P/30)</td>
+                    <td>30,60,90,120</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>013</td>
+                    <td>05 PARC. 30D (1ª P/30)</td>
+                    <td>30,60,90,120,150</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>014</td>
+                    <td>06 PARC. 30D (1ª P/30)</td>
+                    <td>30,60,90,120,150,180</td>
+                    <td>105</td>
+                </tr>
+                <tr>
+                    <td>081</td>
+                    <td>07 PARC. 30D (1ª P/30)</td>
+                    <td>30,60,90,120,150,180,210</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>061</td>
+                    <td>08 PARC. 30D (1ª P/30)</td>
+                    <td>30,60,90,120,150,180,210,140</td>
+                    <td>135</td>
+                </tr>
+                <tr>
+                    <td class="rotate colums-title-table" rowspan="5">60 dias</td>
+                    <td>098</td>
+                    <td>02 PARC. 30D (1ª P/60)</td>
+                    <td>60,90</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>054</td>
+                    <td>03 PARC. 30D (1ª P/60)</td>
+                    <td>60,90,120</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>043</td>
+                    <td>04 PARC. 30D (1ª P/60)</td>
+                    <td>60,90,120,150</td>
+                    <td>105</td>
+                </tr>
+                <tr>
+                    <td>096</td>
+                    <td>05 PARC. 30D (1ª P/60)</td>
+                    <td>60,90,120,150,180</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>097</td>
+                    <td>06 PARC. 30D (1ª P/60)</td>
+                    <td>60,90,120,150,180,210</td>
+                    <td>135</td>
+                </tr>
+                <tr>
+                    <td class="rotate colums-title-table" rowspan="2">90 dias</td>
+                    <td>158</td>
+                    <td>03 PARC. 30D (1ª P/90)</td>
+                    <td>90,120,150</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>157</td>
+                    <td>04 PARC. 30D (1ª P/90)</td>
+                    <td>90,120,150,180</td>
+                    <td>135</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function calcular() {
+            const valor = parseFloat(document.getElementById('valor').value);
+            const tipo = document.querySelector('input[name="tipo"]:checked').value;
+            const linhas = document.querySelectorAll('#tabela-corpo tr');
+            
+            linhas.forEach(linha => {
+                const prazoMedio = parseInt(linha.cells[5].innerText, 10);
+
+                // Reseta a classe highlight em todas as linhas
+                linha.classList.remove('highlight');
+
+                if (tipo === 'corte') {
+                    if (valor >= 500 && prazoMedio === 135) {
+                        linha.classList.add('highlight');
+                    } else if (valor >= 300 && prazoMedio === 120) {
+                        linha.classList.add('highlight');
+                    } else if (valor >= 100 && prazoMedio === 105) {
+                        linha.classList.add('highlight');
+                    } else if (valor >= 50 && prazoMedio === 90) {
+                        linha.classList.add('highlight');
+                    }
+                } else if (tipo === 'leite') {
+                    if (valor >= 100 && prazoMedio === 60) {
+                        linha.classList.add('highlight');
+                    } else if (valor >= 40 && prazoMedio === 45) {
+                        linha.classList.add('highlight');
+                    } else if (valor >= 20 && prazoMedio === 30) {
+                        linha.classList.add('highlight');
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
